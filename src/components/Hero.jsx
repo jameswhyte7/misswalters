@@ -69,7 +69,7 @@ const Hero = () => {
           transition={{ duration: 1.2 }}
           className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl pb-10 font-extrabold tracking-widest drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]"
         >
-          GOD LOVES YOU
+          THE WONDERS OF GOD
         </motion.h2>
       </motion.div>
 
@@ -87,24 +87,22 @@ const Hero = () => {
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-  <button className="flex items-center justify-center gap-3 bg-white text-black font-bold py-3 px-6 rounded-md hover:bg-gray-200 transition">
-    <FiPlay className="text-xl" />
-    Listen Now
-  </button>
-  <button className="flex items-center justify-center gap-3 bg-[#1D4ED8]/90 text-white font-semibold py-3 px-6 rounded-md hover:opacity-80 transition group relative">
-    Book Miss Walters
-    <FiArrowRight className="text-white group-hover:translate-x-1 transition-transform duration-300" />
-  </button>
-</div>
-
+          <button className="flex items-center justify-center gap-3 bg-white text-black font-bold py-3 px-6 rounded-md hover:bg-gray-200 transition">
+            <FiPlay className="text-xl" />
+            Listen Now
+          </button>
+          <button className="flex items-center justify-center gap-3 bg-[#1D4ED8]/90 text-white font-semibold py-3 px-6 rounded-md hover:opacity-80 transition group relative">
+            Book Miss Walters
+            <FiArrowRight className="text-white group-hover:translate-x-1 transition-transform duration-300" />
+          </button>
+        </div>
       </motion.div>
 
       {/* Mute/Unmute */}
       <button
         onClick={toggleMute}
-        title={isMuted ? "Unmute" : "Mute"
-        }
-        className="absolute bottom-18 right-[0.9rem] md:right-16 lg:right-24 z-20 hover:bg-[#ffffff1a] text-white p-1 rounded-full backdrop-blur-lg transition-all duration-300 border"
+        title={isMuted ? "Unmute" : "Mute"}
+        className="absolute bottom-20 right-[0.9rem] md:right-16 lg:right-24 z-20 hover:bg-[#ffffff1a] text-white p-1 rounded-full backdrop-blur-lg transition-all duration-300 border"
       >
         {isMuted ? <FiVolumeX size={18} /> : <FiVolume2 size={18} />}
       </button>

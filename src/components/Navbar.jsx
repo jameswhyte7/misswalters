@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-24 flex items-center justify-between py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src={assets.logo} alt="logo" className="w-7" />
+          <img src={assets.logo} alt="logo" className="w-8" />
         </Link>
 
         {/* Menu Button (Mobile) */}
@@ -47,7 +47,7 @@ const Navbar = () => {
           onClick={() => setMenuOpen(true)}
         >
           <span>Menu</span>
-          <Menu size={20} />
+          <Menu size={24} />
         </button>
 
         {/* Desktop Navigation */}
@@ -102,7 +102,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between py-4">
             <span className="font-medium text-[#0a0a0a]">Menu</span>
             <button onClick={() => setMenuOpen(false)}>
-              <X size={20} />
+              <X size={24} />
             </button>
           </div>
 

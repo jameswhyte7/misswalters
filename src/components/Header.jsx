@@ -24,7 +24,7 @@ const Header = () => {
       <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-24 overflow-hidden">
         <Marquee
           gradient={false}
-          speed={150}
+          speed={120}
           pauseOnHover={false}
           className="py-2"
         >
@@ -33,7 +33,7 @@ const Header = () => {
             return (
               <p
                 key={i}
-                className="mx-4 text-base sm:text-base md:text-lg font-medium text-gray-800 whitespace-nowrap flex items-center gap-2"
+                className="mx-4 text-lg sm:text-lg md:text-xl font-medium text-gray-800 whitespace-nowrap flex items-center gap-2"
               >
                 <span className="text-gray-800">{index}</span>
                 {rest.join(" ")}
