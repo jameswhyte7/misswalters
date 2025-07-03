@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./hide-scrollbar.css";
+
+@theme {
+  --color-primary: #2563eb;
+  --color-primary: #fbbf24;
+}
+
+@layer components {
+  /* White arrows */
+  .custom-swiper .swiper-button-next,
+  .custom-swiper .swiper-button-prev {
+    @apply text-white;
+  }
+
+  /* White bullets */
+  .custom-swiper .swiper-pagination-bullet {
+    @apply bg-white opacity-60;
+  }
+
+  .custom-swiper .swiper-pagination-bullet-active {
+    @apply opacity-100;
+  }
+}
+
+
+/* Hide scrollbar for all browsers */
+div::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.clip-overlay {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.48);
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  transform: scaleX(-1);
+}
