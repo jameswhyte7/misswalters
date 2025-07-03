@@ -33,7 +33,7 @@ const Header = () => {
             return (
               <p
                 key={i}
-                className="mx-4 text-xs sm:text-sm md:text-base font-medium text-gray-800 whitespace-nowrap flex items-center gap-2"
+                className="mx-4 text-base sm:text-base md:text-lg font-medium text-gray-800 whitespace-nowrap flex items-center gap-2"
               >
                 <span className="text-gray-800">{index}</span>
                 {rest.join(" ")}
