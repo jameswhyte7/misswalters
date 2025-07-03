@@ -104,7 +104,7 @@ const Hero = () => {
         onClick={toggleMute}
         title={isMuted ? "Unmute" : "Mute"
         }
-        className="absolute bottom-16 right-[0.9rem] md:right-16 lg:right-24 z-20 hover:bg-[#ffffff1a] text-white p-1 rounded-full backdrop-blur-lg transition-all duration-300 border"
+        className="absolute bottom-18 right-[0.9rem] md:right-16 lg:right-24 z-20 hover:bg-[#ffffff1a] text-white p-1 rounded-full backdrop-blur-lg transition-all duration-300 border"
       >
         {isMuted ? <FiVolumeX size={18} /> : <FiVolume2 size={18} />}
       </button>
